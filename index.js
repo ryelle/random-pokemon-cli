@@ -13,17 +13,6 @@ const options = {
 	json: true // Automatically parses the JSON string in the response 
 };
 
-function getPokeSprite( sprites ) {
-	const frontPriority = [ 'front_shiny', 'front_default', 'front_shiny_female', 'front_female' ];
-
-	let currentSprite = frontPriority.pop();
-	while ( null === sprites[ currentSprite ] ) {
-		currentSprite = frontPriority.pop();
-	}
-	
-	return sprites[ currentSprite ];
-}
-
 function getLocalizedObject( names, language ) {
 	return find( names, ( name ) => {
 		return ( name.language.name === language );
