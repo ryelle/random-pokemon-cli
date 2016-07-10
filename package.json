@@ -1,0 +1,16 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pokemon": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "request-promise": "^3.0.0",
+    "wordwrap": "^1.0.0"
+  }
+}
